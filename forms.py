@@ -19,5 +19,4 @@ class ReviewForm(FlaskForm):
         NumberRange(min=1, max=5)    # 1〜5の範囲に限定
     ])
 
-    # 投稿ボタン
     submit = SubmitField('投稿する')
