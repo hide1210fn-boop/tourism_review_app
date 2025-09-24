@@ -6,8 +6,6 @@ __pycache__/
 venv/
 env/
 
-# SQLite
-reviews.db
 
 # IDE
 .vscode/
