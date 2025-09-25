@@ -1,0 +1,24 @@
+# Pythonキャッシュ
+__pycache__/
+*.py[cod]
+*.pyo
+
+# 仮想環境（venvなど）
+venv/
+env/
+ENV/
+*.egg-info/
+
+
+# 環境変数ファイル（セキュリティ対策）
+.env
+
+# VS Code設定
+.vscode/
+
+# ログファイル
+*.log
+
+# OSごとの不要ファイル
+.DS_Store
+Thumbs.db
