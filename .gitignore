@@ -2,6 +2,8 @@
 __pycache__/
 *.py[cod]
 *.pyo
+*.pyc
+
 
 # 仮想環境（venvなど）
 venv/
