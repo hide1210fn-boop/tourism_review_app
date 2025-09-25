@@ -1,32 +1,42 @@
-/* ページ全体のスタイル */
+/* --------------------------------------------------
+   基本レイアウトおよび中央配置のための全体スタイル
+-------------------------------------------------- */
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f5f5f5;
-    margin: 0;
-    padding: 0;
-    height: 100vh; /* 画面の高さを100%に */
-    display: flex;
-    justify-content: center; /* 横方向の中央揃え */
-    align-items: center;     /* 縦方向の中央揃え */
+    font-family: 'Segoe UI', sans-serif;     /* サンセリフ系フォントを使用 */
+    background-color: #f5f5f5;               /* 薄いグレーの背景色 */
+    margin: 0;                               /* デフォルトの余白をリセット */
+    padding: 0;                              /* デフォルトのパディングをリセット */
+    height: 100vh;                           /* 画面の高さいっぱいに広げる */
+    display: flex;                           /* Flexbox を使って中央揃え */
+    justify-content: center;                /* 水平方向の中央寄せ */
+    align-items: center;                    /* 垂直方向の中央寄せ */
 }
 
-/* コンテンツボックスのスタイル */
+/* --------------------------------------------------
+   中央に表示されるコンテンツボックスのスタイル
+-------------------------------------------------- */
 .container {
-    max-width: 800px;
-    background-color: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    text-align: center;
+    max-width: 800px;                        /* 最大幅を指定 */
+    background-color: white;                /* 背景色を白に設定 */
+    padding: 30px;                           /* 内側の余白 */
+    border-radius: 8px;                      /* 角を丸くする */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);   /* ふわっとした影を付ける */
+    text-align: center;                      /* テキストを中央揃え */
 }
 
+/* --------------------------------------------------
+   見出し（タイトル）のスタイル設定
+-------------------------------------------------- */
 h1 {
-    color: #2c3e50;
-    font-size: 2em;
-    margin-bottom: 10px;
+    color: #2c3e50;                          /* 濃いグレーの文字色 */
+    font-size: 2em;                          /* フォントサイズを拡大 */
+    margin-bottom: 10px;                     /* 下に余白をつける */
 }
 
+/* --------------------------------------------------
+   段落（本文テキスト）のスタイル設定
+-------------------------------------------------- */
 p {
-    color: #34495e;
-    font-size: 1.2em;
+    color: #34495e;                          /* やや明るいグレーの文字色 */
+    font-size: 1.2em;                        /* 標準よりやや大きめの文字 */
 }

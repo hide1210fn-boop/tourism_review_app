@@ -1,22 +1,25 @@
-# Flask-WTF を使ってフォームを定義するための基底クラスをインポート
-from flask_wtf import FlaskForm
+# ----------------------------------------
+# forms.py：レビュー投稿フォームの定義
+# 使用ライブラリ：Flask-WTF（WTForms）
+# ----------------------------------------
 
-# フォームで使用する各種フィールドとバリデーションをインポート
-from wtforms import StringField, TextAreaField, IntegerField, SubmitField
-from wtforms.validators import DataRequired, NumberRange
+from flask_wtf import FlaskForm  # Flask用のフォーム基底クラス
+from wtforms import StringField, TextAreaField, IntegerField, SubmitField  # 入力欄の種類
+from wtforms.validators import DataRequired, NumberRange  # 入力チェック用のルール
 
-# 観光スポットのレビュー投稿フォームの定義
+# 観光地レビュー投稿フォーム（名称・コメント・評価）
 class ReviewForm(FlaskForm):
-    # 観光地名の入力欄（空欄禁止）
+    # 観光地名（必須入力）
     spot_name = StringField('観光地名', validators=[DataRequired()])
 
-    # コメントの入力欄（空欄禁止）
+    # コメント（必須入力）
     comment = TextAreaField('コメント', validators=[DataRequired()])
 
-    # 評価（1〜5の整数）を入力する欄（空欄禁止＋範囲指定）
+    # 評価（1〜5の整数、必須）
     rating = IntegerField('評価（1〜5）', validators=[
-        DataRequired(),              # 入力必須
-        NumberRange(min=1, max=5)    # 1〜5の範囲に限定
+        DataRequired(),            # 入力必須
+        NumberRange(min=1, max=5)  # 1〜5の範囲に限定
     ])
 
+    # 投稿ボタン
     submit = SubmitField('投稿する')
