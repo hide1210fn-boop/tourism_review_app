@@ -13,7 +13,7 @@
     <h1 class="mb-4">観光スポットレビュー投稿</h1>
 
 <!-- レビュー投稿フォーム（観光地名・コメント・評価を入力） -->
-<form method="POST">
+<form method="POST" action="{{ url_for('submit_review') }}">
   {{ form.hidden_tag() }}  <!-- CSRF対策：セキュリティ保護のための隠しフィールド -->
 
   <!-- 観光地名の入力欄 -->

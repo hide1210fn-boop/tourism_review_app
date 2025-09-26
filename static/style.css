@@ -6,7 +6,7 @@ body {
     background-color: #f5f5f5;               /* 薄いグレーの背景色 */
     margin: 0;                               /* デフォルトの余白をリセット */
     padding: 0;                              /* デフォルトのパディングをリセット */
-    height: 100vh;                           /* 画面の高さいっぱいに広げる */
+    height: 100%;                           /* 画面の高さいっぱいに広げる */
     display: flex;                           /* Flexbox を使って中央揃え */
     justify-content: center;                /* 水平方向の中央寄せ */
     align-items: center;                    /* 垂直方向の中央寄せ */
